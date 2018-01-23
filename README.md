@@ -4,6 +4,7 @@
 ```
 go get -u github.com/kardianos/govendor
 go get -u github.com/zhangpanyi/botcasino
+govendor fetch +external
 ```
 
 # 生成密钥
