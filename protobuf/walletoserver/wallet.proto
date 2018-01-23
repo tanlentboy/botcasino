@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package walletoserver;
+
+// 定义钱包服务
+service Wallet {
+    // GetFees 获取费用
+    rpc GetFees(GetFeeRequest) returns (GetFreeReply) {}
+    // Transfer 转账操作
+    rpc Transfer(TransferRequest) returns (TransferReply) {}
+}
+
+// 费用
+message Fee  {
+    string asset_id = 1;    // 资产ID
+    uint32 fee = 2;         // 转账费用
+}
+
+// 获取费用请求
+message GetFeeRequest {
+    repeated string assets = 1; // 资产列表
+}
+
+// 获取费用响应
+message GetFreeReply {
+    bool ok = 1;            // 是否成功
+    string reason = 2;      // 错误原因
+    repeated Fee fees = 3;  // 转账费用
+}
+
+// 转账操作请求
+message TransferRequest {
+   string to = 1;       // 目标用户
+   string asset_id = 2; // 资产ID
+   uint32 amount = 3;   // 资产数量
+   string memo = 4;     // 备注信息
+}
+
+// 转账操作回复
+message TransferReply {
+    bool ok = 1;        // 是否成功
+    string reason = 2;  // 错误原因
+}

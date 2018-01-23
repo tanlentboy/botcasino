@@ -1,0 +1,55 @@
+# 绑定地址
+bind-address: "0.0.0.0"
+
+# 端口号
+port: 12180
+
+# 桶数量
+bucket_num: 16
+
+# 服务域名
+domain: "YOURDOMAIN"
+
+# API服务站点
+api_website: "https://api.telegram.org/"
+
+# 机器人token
+token: "YOURTOKEN"
+
+# 钱包名称
+account: "YOURACCOUNT"
+
+# 动态配置文件
+dynamic: "dynamic.yml"
+
+# 语言包路径
+languages: "languages"
+
+# BoltDB路径
+boltdb_path: "master.db"
+
+# 红包封面图
+red_envelopes_cover:
+  - "cover/101.webp"
+  - "cover/102.webp"
+
+# 钱包服务配置
+wallet_service:
+  address: "127.0.0.1"
+  port: 17128
+
+# 数据库配置
+mysql:
+  # 数据库名
+  db: "casino_logs"
+  # 服务地址
+  host: "127.0.0.1:3306"
+  # 访问用户
+  user: "root"
+  # 访问密码
+  password: ""
+  # 连接数量
+  conns: 1
+  # 附加选项
+  options:
+    charset: "utf8mb4"
