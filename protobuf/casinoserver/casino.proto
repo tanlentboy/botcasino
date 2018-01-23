@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package casinoserver;
+
+// 定义赌场服务
+service Casino {
+    // SentNotice 转款通知
+    rpc SentNotice(SentNoticeRequest) returns (SentNoticeReply) {}
+    // ReceiveNotice 收款通知
+    rpc ReceiveNotice(ReceiveNoticeRequest) returns (ReceiveNoticeReply) {}
+}
+
+// 转款通知请求
+message SentNoticeRequest {
+    string asset_id = 1;        // 资产ID
+    string asset = 2;           // 资产名称
+    uint64 amount = 3;          // 资产数量(分)
+    string fee_asset_id = 4;    // 手续费资产ID
+    string fee_asset = 5;       // 手续费资产名称
+    uint64 fee_amount = 6;      // 手续费资产数量(分)
+    uint64 block_num = 7;       // 区块高度
+    string memo = 8;            // 备注消息
+}
+
+// 转款通知回复
+message SentNoticeReply {
+}
+
+// 收款通知请求
+message ReceiveNoticeRequest {
+    string asset_id = 1;        // 资产ID
+    string asset = 2;           // 资产名称
+    uint64 amount = 3;          // 资产数量(分)
+    uint64 block_num = 4;       // 区块高度
+    string memo = 5;            // 备注消息
+}
+
+// 收款通知回复
+message ReceiveNoticeReply {
+}

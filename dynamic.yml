@@ -1,0 +1,26 @@
+# 地址白名单
+white_list:
+  - "127.0.0.1"
+
+# 是否暂停服务
+suspended: false
+
+# 备注最大长度
+max_memo_length: 64
+
+# 是否允许充值
+allow_deposit: true
+
+# 是否允许提现
+allow_withdraw: true
+
+# 使用固定手续费
+use_fixed_fee: true
+
+# 固定手续费金额(分)
+fixed_fee_amount:
+  cny: 200
+  usd: 50
+
+# 红包过期时间(秒)
+red_envelope_expire: 86400
