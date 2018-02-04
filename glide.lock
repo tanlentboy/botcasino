@@ -1,0 +1,119 @@
+hash: e82e75829cc60f1ac45849d1b1a487825fb26edf7fe1fa690be05a01457db626
+updated: 2018-02-05T00:20:24.582669867+08:00
+imports:
+- name: github.com/boltdb/bolt
+  version: 2f1ce7a837dcb8da3ec595b1dac9d0632f0f99e8
+- name: github.com/cihub/seelog
+  version: f561c5e57575bb1e0a2167028b7339b3a8d16fb4
+  subpackages:
+  - archive
+  - archive/gzip
+  - archive/tar
+  - archive/zip
+- name: github.com/fsnotify/fsnotify
+  version: c2828203cd70a50dcccfb2761f8b1f8ceef9a8e9
+- name: github.com/go-sql-driver/mysql
+  version: bc14601d1bd56421dd60f561e6052c9ed77f9daf
+- name: github.com/golang/protobuf
+  version: 925541529c1fa6821df4e44ce2723319eb2be768
+  subpackages:
+  - proto
+  - ptypes
+  - ptypes/any
+  - ptypes/duration
+  - ptypes/timestamp
+- name: github.com/Jeffail/tunny
+  version: 225d3efa59875afce1610178bc69d5bdaa8509cf
+- name: github.com/rifflock/lfshook
+  version: 1fdc019a35147ddbb3d25aedf713ad6d1430c144
+- name: github.com/senlinms/logrus
+  version: c078b1e43f58d563c74cebe63c85789e76ddb627
+- name: github.com/sirupsen/logrus
+  version: d682213848ed68c0a260ca37d6dd5ace8423f5ba
+- name: github.com/vrecan/death
+  version: 0f3cc33443d467c066ea280f5267c7f6ee74040b
+- name: github.com/zhangpanyi/basebot
+  version: cea965cd2c61f23edcbd8d75c8480ee23a5e35bc
+  subpackages:
+  - hashdb
+  - history
+  - logger
+  - telegram
+  - telegram/methods
+  - telegram/types
+  - telegram/updater
+- name: golang.org/x/crypto
+  version: 1875d0a70c90e57f11972aefd42276df65e895b9
+  subpackages:
+  - ssh/terminal
+- name: golang.org/x/net
+  version: 2fb46b16b8dda405028c50f7c7f0f9dd1fa6bfb1
+  subpackages:
+  - context
+  - http2
+  - http2/hpack
+  - idna
+  - internal/timeseries
+  - lex/httplex
+  - trace
+- name: golang.org/x/sys
+  version: 37707fdb30a5b38865cfb95e5aab41707daec7fd
+  subpackages:
+  - unix
+  - windows
+- name: golang.org/x/text
+  version: e19ae1496984b1c655b8044a65c0300a3c878dd3
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+- name: google.golang.org/appengine
+  version: 5bee14b453b4c71be47ec1781b0fa61c2ea182db
+  subpackages:
+  - cloudsql
+- name: google.golang.org/genproto
+  version: 4eb30f4778eed4c258ba66527a0d4f9ec8a36c45
+  subpackages:
+  - googleapis/rpc/status
+- name: google.golang.org/grpc
+  version: 6b51017f791ae1cfbec89c52efdf444b13b550ef
+  subpackages:
+  - balancer
+  - balancer/base
+  - balancer/roundrobin
+  - codes
+  - connectivity
+  - credentials
+  - encoding
+  - grpclb/grpc_lb_v1/messages
+  - grpclog
+  - internal
+  - keepalive
+  - metadata
+  - naming
+  - peer
+  - resolver
+  - resolver/dns
+  - resolver/passthrough
+  - stats
+  - status
+  - tap
+  - transport
+- name: gopkg.in/natefinch/lumberjack.v2
+  version: a96e63847dc3c67d17befa69c303767e2f84e54f
+- name: gopkg.in/yaml.v2
+  version: d670f9405373e636a5a2765eea47fac0c9bc91a4
+- name: upper.io/db.v3
+  version: 7c550bc7b8b2915197ae407336e1fe2a6504222d
+  subpackages:
+  - internal/cache
+  - internal/cache/hashstructure
+  - internal/immutable
+  - internal/sqladapter
+  - internal/sqladapter/compat
+  - internal/sqladapter/exql
+  - lib/reflectx
+  - lib/sqlbuilder
+  - mysql
+testImports: []

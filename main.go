@@ -101,11 +101,7 @@ func main() {
 		logger.Panic(err)
 	}
 	logger.Infof("Red envelope bot_id is: %d", bot.ID)
-
-	pool, err := updater.NewPool(2048)
-	if err != nil {
-		logger.Panic(err)
-	}
+	pool := updater.NewPool(2048)
 	expiretimer.StartTimerForOnce(bot, pool)
 
 	// 创建消息推送器

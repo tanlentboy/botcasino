@@ -1,0 +1,41 @@
+package: github.com/zhangpanyi/botcasino
+import:
+- package: github.com/boltdb/bolt
+  version: v1.3.1
+- package: github.com/fsnotify/fsnotify
+  version: v1.4.7
+- package: github.com/golang/protobuf
+  version: v1.0.0
+  subpackages:
+  - proto
+- package: github.com/vrecan/death
+- package: github.com/zhangpanyi/basebot
+  subpackages:
+  - history
+  - logger
+  - telegram
+  - telegram/methods
+  - telegram/types
+  - telegram/updater
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: golang.org/x/text
+  subpackages:
+  - secure/bidirule
+  - unicode/bidi
+  - unicode/norm
+- package: google.golang.org/grpc
+  version: v1.9.2
+- package: google.golang.org/appengine
+  subpackages:
+  - cloudsql
+- package: google.golang.org/genproto
+  subpackages:
+  - googleapis/rpc/status
+- package: gopkg.in/yaml.v2
+- package: upper.io/db.v3
+  version: v3.5.1
+  subpackages:
+  - lib/sqlbuilder
+  - mysql
