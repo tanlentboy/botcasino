@@ -8,7 +8,7 @@ botcasino 是基于 [Telegram](https://telegram.org/) 机器人的红包机器�
 # 获取代码
 ```
 git clone https://github.com/zhangpanyi/botcasino.git
-glide installs
+glide install
 ```
 
 # 解析域名
