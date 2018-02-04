@@ -1,5 +1,5 @@
 hash: e82e75829cc60f1ac45849d1b1a487825fb26edf7fe1fa690be05a01457db626
-updated: 2018-02-02T12:05:45.493820023+08:00
+updated: 2018-02-05T00:20:24.582669867+08:00
 imports:
 - name: github.com/boltdb/bolt
   version: 2f1ce7a837dcb8da3ec595b1dac9d0632f0f99e8
@@ -33,7 +33,7 @@ imports:
 - name: github.com/vrecan/death
   version: 0f3cc33443d467c066ea280f5267c7f6ee74040b
 - name: github.com/zhangpanyi/basebot
-  version: 1cfa303b5bf1aac2d0c4bdee9acb791c3bd5fbaa
+  version: cea965cd2c61f23edcbd8d75c8480ee23a5e35bc
   subpackages:
   - hashdb
   - history
@@ -47,7 +47,7 @@ imports:
   subpackages:
   - ssh/terminal
 - name: golang.org/x/net
-  version: b417086c80e91bfa321ef761574721644b8b9f61
+  version: 2fb46b16b8dda405028c50f7c7f0f9dd1fa6bfb1
   subpackages:
   - context
   - http2
@@ -57,7 +57,7 @@ imports:
   - lex/httplex
   - trace
 - name: golang.org/x/sys
-  version: 8f27ce8a604014414f8dfffc25cbcde83a3f2216
+  version: 37707fdb30a5b38865cfb95e5aab41707daec7fd
   subpackages:
   - unix
   - windows
