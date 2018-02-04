@@ -8,8 +8,8 @@ botcasino 是基于 [Telegram](https://telegram.org/) 机器人的红包机器�
 # 获取代码
 ```
 git clone https://github.com/zhangpanyi/botcasino.git
+glide installs
 ```
-
 
 # 解析域名
 botcasino 服务使用了 [Webhook](https://core.telegram.org/bots/api#setwebhook) 的方式接收机器人消息更新。所有必须准备一个域名，并解析到运行 botcasino 的服务器上。
